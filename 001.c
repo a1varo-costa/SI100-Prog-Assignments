@@ -1,5 +1,5 @@
 /**
- * 	Assignment 002 - printf
+ * 	Assignment 001 - printf
  *
  * A demonstration of the use of 'printf' function printing an
  * ASCII art.

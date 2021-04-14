@@ -1,5 +1,5 @@
 /**
- * 	Assignment 001 - Ola Mundo
+ * 	Assignment 000 - Ola Mundo
  *
  * Program that prints to the standard output the string "Ola Mundo!!!":
  * a simple introduction to C programming.
