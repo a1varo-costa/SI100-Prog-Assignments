@@ -33,6 +33,8 @@
  *		Somas::36.00 24.00 30.00
  *		Medias::12.00 8.00 10.00
  *		Desvios::4.90 4.90 4.90
+ *
+ * Author: Álvaro A. Costa
  */
 
 #include <stdio.h>
