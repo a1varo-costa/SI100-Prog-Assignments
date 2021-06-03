@@ -3,11 +3,18 @@ CC := gcc
 CFLAGS := -std=c99 -pedantic -Wall
 LDFLAGS := -lm
 
-SRC := $(basename $(wildcard *.c))
-OUTDIR := bin
+SRCDIR := src
+SRC := $(wildcard $(addsuffix /*.c, $(SRCDIR)))
 
-all: $(SRC)
+BINDIR := bin
+BIN := $(SRC:src/%.c=$(BINDIR)/%)
 
-%: %.c
-	@ mkdir -p $(OUTDIR)
-	$(CC) $(CFLAGS) -o $(OUTDIR)/$@ $^ $(LDFLAGS)
+.PHONY: all clean
+
+all: $(BIN)
+
+$(BINDIR)/%: $(SRCDIR)/%.c
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+
+clean:
+	@rm -f $(BINDIR)/*
