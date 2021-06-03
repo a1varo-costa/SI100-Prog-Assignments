@@ -8,7 +8,7 @@
  * is less than 0.0000001, and "os pontos nao sao iguais"
  * otherwise.
  *
- * Autor: Álvaro A. Costa
+ * Author: Álvaro A. Costa
  */
 
 #include <stdio.h>
